@@ -1,0 +1,32 @@
+/* Product Card Styling */
+.product-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    height: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+/* Typography constraints for clean UI */
+.card-title {
+    font-size: 1.1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* limits title to 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#modalImage {
+    max-height: 250px;
+    object-fit: contain;
+}
